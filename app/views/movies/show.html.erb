@@ -1,0 +1,19 @@
+<div class="row">
+
+  <%= render "movies/side_bar" %>
+
+  <div class="medium-10 columns">
+<!-- how to render this part, its confusing!!! -->
+
+  <%= render partial: "movie", object: @movies %>
+  
+    <div>
+      <%= button_to "Rent!", movie_rentals_path(@movie), class: :button %>
+    </div>
+
+    <div>
+      <%= link_to "Back", movies_path, class: :button %>
+    </div>
+
+  </div>
+</div>
