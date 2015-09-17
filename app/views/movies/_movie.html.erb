@@ -1,5 +1,4 @@
 <div class="medium-10 columns">
-  <% @movies.each do |movie| %>
     <div class="movie">
       <h1><%= link_to movie.title, movie %></h1>
       <h3><%= movie.year %></h3>
@@ -7,5 +6,4 @@
       <p><%= movie.description %></p>
     </div>
     <hr />
-  <% end %>
 </div>

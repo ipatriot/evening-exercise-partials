@@ -2,12 +2,11 @@
 
   <%= render "movies/side_bar" %>
 
-  <div class="medium-10 columns">
 <!-- how to render this part, its confusing!!! -->
 
-  <%= render partial: "movie", object: @movies %>
-  
-    <div>
+  <%= render partial: "movie", locals: {movie: @movie} %>
+
+    <div class="movie">
       <%= button_to "Rent!", movie_rentals_path(@movie), class: :button %>
     </div>
 
